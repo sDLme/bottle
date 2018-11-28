@@ -1,0 +1,125 @@
+$is-mobile: 999.99px;
+$is-desktop: 1000px;
+
+.cc-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+
+  margin: 0 auto;
+  padding: 2.313em 0 0 0;
+  width: 100%;
+  max-width: 1314px;
+
+  @media(min-width: $is-desktop) {
+    padding: 14px 0 0 0;
+  }
+
+  &__title {
+    margin: 1.875em 0 0 0;
+    color: #ffffff;
+    font-family: "Verlag", sans-serif;
+    font-size: 1.625em;
+    font-weight: 700;
+
+    @media(min-width: $is-desktop) {
+      font-size: 40px;
+      margin-top: 77px;
+    }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  &__subtitle {
+    margin: 10px 0 0 0;
+    color: #ffffff;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+
+    @media (max-width: $is-mobile) {
+      padding-right: 65px;
+    }
+
+    @media(min-width: $is-desktop) {
+      font-size: 24px ;
+    }
+  }
+
+  &-container {
+    padding: 0 15px;
+  }
+
+  &__flow {
+    margin-bottom: 0.625em;
+    margin-top: 45px;
+    padding: 0 4em 0 0.938em;
+    color: #ffffff;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    @media (min-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      list-style: none;
+      font-size: 0.6em;
+    }
+
+    &-item {
+      @media (min-width: 1000px) {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin: 0 30px;
+        font-size: 18px;
+
+        &:nth-child(1) {
+          width: 19%;
+        }
+
+        &:nth-child(3) {
+          width: 24%;
+        }
+      }
+      p {
+        margin: 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+  }
+
+  &__underline {
+    margin: 30px auto 0;
+    width: 90%;
+    height: 0;
+    border: 0.031em solid #ffffff;
+    background-color: #fff;
+    opacity: 0.4;
+
+    @media(min-width: 1000px) {
+      width: 62%;
+      border: 0.5px solid #ffffff;
+    }
+  }
+}
+
+.flow-item {
+
+  &__icon {
+    margin-right: 12px;
+
+    @media(max-width: 1000px) {
+      display: none;
+    }
+  }
+}

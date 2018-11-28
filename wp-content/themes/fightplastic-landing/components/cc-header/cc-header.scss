@@ -1,0 +1,102 @@
+$is-desktop: 1000px;
+
+.cc-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  z-index: 1000;
+
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.688em;
+    border: 0.063em solid #e6e8ec;
+    background-color: #ffffff;
+
+    @media(min-width: $is-desktop) {
+      border: 1px solid #e6e8ec;
+      border-top: none;
+    }
+
+    &-item {
+      display: flex;
+      position: relative;
+      min-width: 33%;
+
+      &--center {
+        display: flex;
+        justify-content: center;
+        @media (min-width: $is-desktop) {
+          justify-content: left;
+        }
+      }
+
+      &--right {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &--visible {
+        @media(min-width: $is-desktop) {
+          display: none;
+        }
+      }
+    }
+
+    @media (min-width: $is-desktop) {
+      justify-content: space-between;
+      height: 55px;
+    }
+  }
+
+  &__icon {
+    width: 1.688em;
+    height: auto;
+    margin-right: 0.375em;
+    margin-left: 0.375em;
+
+    &--logo {
+      width: 7.313em;
+
+      @media (min-width: $is-desktop) {
+        height: 24px !important;
+        width: auto !important;
+        margin: 0 26px !important;
+      }
+    }
+    &--turtle {
+      width: 3.5em;
+    }
+
+    @media (min-width: $is-desktop) {
+      width: 27px;
+      height: 27px;
+      margin: 0 8px 0 8px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    &--padding-right-15 {
+      padding: 0 0.938em 0 0;
+
+      @media (min-width: $is-desktop) {
+        padding: 0 12px 0 0;
+      }
+    }
+
+  }
+}

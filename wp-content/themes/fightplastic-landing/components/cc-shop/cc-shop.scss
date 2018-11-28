@@ -1,0 +1,131 @@
+.cc-shop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 1rem;
+
+  margin: 0 auto;
+  padding: 1.4em 1.375em 0 1.375em;
+  background-image: linear-gradient(to top, #e6e8ec 65%, rgba(230, 232, 236, 0) 100%);
+
+  width: 100%;
+  max-width: 1314px;
+
+  &__select {
+    color: #1b1b1b;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-weight: 300;
+    font-size: 1.125em;
+
+    margin: 1.063em 0 1.063em 0;
+    width: 100%;
+    max-width: 15.778em;
+    height: 3.15em;
+
+    border: 1em solid white;
+    border-left-width: 1.688em;
+    border-right-width: 1.688em;
+    border-radius: 0.250em;
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('images/arrow.svg') 100% / 7% no-repeat #ffffff;
+
+    /* CAUTION: IE hackery ahead */
+    select::-ms-expand {
+      display: none; /* remove default arrow on ie10 and ie11 */
+    }
+
+    /* target Internet Explorer 9 to undo the custom arrow */
+    @media screen and (min-width: 0 \0) {
+      select {
+        background: none \9;
+        padding: 5px \9;
+      }
+    }
+    @media (min-width: 1000px) {
+      font-size: 13px;
+      width: 283px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__link {
+    margin: 0 0 2.125em 0;
+    width: 100%;
+    max-width: 17.750em;
+    padding: 0.875em 0;
+    border: 0.063em solid rgba(112, 112, 112, 0);
+    border-radius: 100px;
+    background-color: #00adee;
+    color: #ffffff;
+    font-family: 'Verlag', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+      color: #ffffff;
+      text-decoration: none;
+      outline: none;
+    }
+
+    @media (min-width: 1000px) {
+      max-width: 283px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  @media (min-width:1000px) {
+    max-width: 600px;
+    background: none;
+    flex-grow: 1;
+    align-items: flex-start;
+    padding: 1.4em 0 0 2.6em;
+  }
+
+}
+.cc-shop__title {
+  margin: 0;
+  text-align: center;
+  font-family: 'Verlag', sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00adee ;
+
+  @media (min-width:1000px) {
+    text-align: left;
+  }
+  &--mobile-only {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    font-size: 23px;
+    @media (min-width:1000px) {
+      display: none;
+    }
+  }
+
+
+}
+
+
+@media (min-width: 1000px) {
+  .select-wrapp {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+}
+

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACR,OAAO,EAAE,aAAa",
+"sources": ["cc-promo.scss"],
+"names": [],
+"file": "cc-promo.css"
+}

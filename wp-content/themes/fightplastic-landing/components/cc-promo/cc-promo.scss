@@ -1,0 +1,90 @@
+$is-desktop: 1000px;
+$is-mobile: 999.99px;
+
+.cc-promo {
+  position: relative;
+  padding: 1.125em 0 0 0;
+  min-height: calc(100vw / 1.81);
+
+  @media(min-width: $is-desktop) {
+    padding: 62px 0 0 0;
+    min-height: calc(100vw / 2.45);
+  }
+
+  &__title {
+    margin: 0 0 0.688em 0;
+    padding: 0 15px;
+    color: #032e46;
+    font-family: Verlag, sans-serif;
+    font-size: 1.625em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media(min-width: $is-desktop) {
+      margin: 0 0 13px 0;
+      font-size: 50px;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    width: 100%;
+    height: calc(100vw / 1.9);
+    top: 45%;
+    text-align: center;
+    background: url("images/mob-play-btn.png") center center no-repeat;
+    background-size: 109% 126%;
+    cursor: pointer;
+    @media(min-width: $is-desktop) {
+      height: calc(100vw / 2.5);
+      top: 5%;
+      background: url("images/play_but.png") center center no-repeat;
+      background-size: cover;
+
+    }
+  }
+
+    &__play-video {
+      padding: 0 1.250em 0 3em;
+      height: 2.250em;
+
+      background-size: 0.750em 1.000em;
+      border: 0.063em solid rgba(112, 112, 112, 0);
+      border-radius: 1.438em;
+      color: #ffffff;
+      font-family: Verlag, sans-serif;
+      font-size: 1.000em;
+      font-weight: 700;
+      text-transform: uppercase;
+      outline: none;
+      cursor: pointer;
+
+      @media(min-width: $is-desktop) {
+        width: 202px;
+        height: 46px;
+        border-radius: 23px;
+        border: 1px solid rgba(112, 112, 112, 0);
+        font-size: 16px;
+      }
+    }
+
+    &__video-player {
+      display: none;
+      width: 100%;
+      height: calc(100vw / 1.8);
+
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+
+      @media(min-width: $is-desktop) {
+        height: calc(100vw / 2.5);
+        top: 0;
+      }
+    }
+  }
+

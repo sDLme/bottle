@@ -1,0 +1,28 @@
+$is-desktop: 1000px;
+$is-mobile: 999.99px;
+
+.buy-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+
+  @media(min-width: $is-desktop) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1314px;
+    margin: 0 auto 0 auto;
+    padding: 180px 60px 20px 60px;
+  }
+
+  &__elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    //padding-top: 60px;
+  }
+
+}

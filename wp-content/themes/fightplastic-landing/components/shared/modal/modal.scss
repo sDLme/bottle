@@ -1,0 +1,243 @@
+$is-desktop: 1000px;
+$is-mobile: 999.99px;
+
+.modal {
+
+  &-body {
+    background: #000000;
+    padding: 0;
+  }
+
+  &-backdrop.in {
+    opacity: .85;
+  }
+
+  @media(max-width: $is-mobile) {
+    &-dialog {
+      margin: 25vh 0.938em 0 0.938em;
+    }
+  }
+
+  @media(min-width: $is-desktop) {
+    &-dialog {
+      margin-top: 25vh;
+    }
+  }
+
+}
+
+.cc-modal-slider {
+  position: relative;
+  max-height: 336px;
+  overflow: hidden;
+
+  @media(min-width: $is-desktop) {
+    max-height: 487px;
+  }
+
+  &--width-initial .slick-track {
+    width: initial !important;
+  }
+
+  &__loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+
+    &--hidden {
+      display: none !important;
+    }
+  }
+
+  &__loader-image {}
+
+  &__prev {
+    position: fixed;
+    z-index: 1;
+    top: 6.750em;
+    left: 1.125em;
+
+    width: 1.5em;
+    height: 2.1em;
+    background: transparent url('/wp-content/themes/fightplastic-landing/images/slider__prev.svg') no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @media(min-width: $is-desktop) {
+      top: 166px;
+      left: 27px;
+    }
+  }
+
+  &__next {
+    position: fixed;
+    z-index: 1;
+    top: 6.750em;
+    right: 1.125em;
+
+    width: 1.5em;
+    height: 2.1em;
+    background: transparent url('/wp-content/themes/fightplastic-landing/images/slider__next.svg') no-repeat center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @media(min-width: $is-desktop) {
+      top: 166px;
+      right: 27px;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    max-width: 22.688em;
+    height: 13.750em;
+
+    @media(min-width: $is-desktop) {
+      height: 380px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__item {
+  }
+
+  &__item-body {
+    position: relative;
+  }
+
+  &__person {
+    position: absolute;
+    z-index: 1;
+    left: 1.125em;
+    bottom: 1.563em;
+
+    @media(min-width: $is-desktop) {
+      left: 33px;
+      bottom: 23px;
+    }
+  }
+
+  &__person-name {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 0.813em;
+    font-weight: 300;
+
+    @media(min-width: $is-desktop) {
+      font-size: 23px;
+    }
+  }
+
+  &__person-age {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 0.813em;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @media(min-width: $is-desktop) {
+      font-size: 23px;
+    }
+  }
+
+  &__item-footer {
+    height: 120px;
+    overflow-y: auto;
+    padding: 1.563em 1.250em;
+    background-color: #000000;
+
+    @media(min-width: $is-desktop) {
+      padding: 23px 31px;
+    }
+
+  }
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border: 1px solid #3e494c;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3e494c;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3e494c;
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 1.000em;
+    font-weight: 300;
+    line-height: 1.125em;
+    color: #ffffff;
+
+    @media(min-width: $is-desktop) {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+  }
+
+  &__link {
+    color: #00adee;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 1.000em;
+    font-weight: 300;
+    line-height: 1.125em;
+
+    &:hover, &:active, &:focus {
+      color: #00adee;
+      text-decoration: none;
+      outline: none;
+    }
+
+    @media(min-width: $is-desktop) {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+  }
+
+}
+
+.modal-content button.close {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  top: -35px;
+  background: url("/wp-content/themes/fightplastic-landing/images/X.webp") no-repeat;
+  background-size: contain;
+  opacity: 1;
+  cursor: pointer;
+  outline: none;
+}
+

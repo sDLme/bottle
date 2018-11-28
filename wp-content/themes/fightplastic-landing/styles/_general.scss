@@ -1,0 +1,32 @@
+$is-desktop: 1000px;
+$is-mobile: 999.99px;
+
+html, body {
+  font-size: 4.175vw;
+
+  @media(min-width: $is-desktop) {
+    font-size: 2.175vw;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 3.688em 0 0 0;
+
+  @media(min-width: $is-desktop) {
+    padding: 55px 0 0 0;
+  }
+}
+
+.cc-about-container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1314px;
+}
+

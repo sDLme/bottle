@@ -1,0 +1,16 @@
+.cc-share-tooltip {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 375px;
+  height: 165px;
+  padding: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzc1IiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDM3NSAxOTIiPjxkZWZzPjxwYXRoIGlkPSJveDhxYSIgZD0iTTE0NzEgNzdjMC0yLjUgMi41LTUgNS01aDM3MHYxNjFjMCAyLjUtMi41IDUtNSA1aC0zNjVjLTIuNSAwLTUtMi41LTUtNXoiLz48cGF0aCBpZD0ib3g4cWIiIGQ9Ik0xODE4IDc0bDI4LTI4djI4eiIvPjwvZGVmcz48Zz48ZyBvcGFjaXR5PSIuOTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNDcxIC00NikiPjx1c2UgZmlsbD0iIzAwYWRlZSIgeGxpbms6aHJlZj0iI294OHFhIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNDcxIC00NikiPjx1c2UgZmlsbD0iIzAwYWRlZSIgeGxpbms6aHJlZj0iI294OHFiIi8+PC9nPjwvZz48L3N2Zz4=) no-repeat center; }
+  .cc-share-tooltip__link {
+    margin: 0 20px;
+    text-decoration: none; }
+
+/*# sourceMappingURL=cc-share-tooltip.css.map */

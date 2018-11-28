@@ -1,0 +1,58 @@
+/*
+ Theme Name:   Fight plastic Child
+ Description:  Twenty Seventine Child Theme
+ Author:       perelview
+ Author URI:   http://example.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+@font-face {
+  font-family: 'Helvetica LT Std';
+  src: url('fonts/37AE36_0_0.woff2') format("woff2"),
+  url('fonts/37AE36_0_0.woff') format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Verlag';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Verlag-Book.woff') format('woff');
+}
+
+@import "styles/general";
+
+/* Mobile components */
+@import "components/cc-header/cc-header";
+@import "components/cc-promo/cc-promo";
+@import "components/cc-social/cc-social";
+@import "components/cc-share/cc-share";
+@import "components/cc-language/cc-language";
+@import "components/cc-movie/cc-movie";
+@import "components/cc-tattoo/cc-tattoo";
+@import "components/cc-about/cc-about";
+@import "components/cc-commitment/cc-commitment";
+@import "components/cc-on-us/cc-on-us";
+@import "components/cc-buy-area/cc-buy-area";
+@import "components/cc-product/cc-product";
+@import "components/cc-shop/cc-shop";
+@import "components/cc-footer/cc-footer";
+@import "components/cs-page/soon";
+
+/* Desktop components */
+@import "components/desktop/cc-share-tooltip/cc-share-tooltip";
+@import "components/desktop/cc-language-tooltip/cc-language-tooltip";
+
+/* Shared components */
+@import "components/shared/modal/bootstrap.min.css";
+@import "components/shared/modal/bootstrap-theme.min.css";
+@import "components/shared/modal/modal";
+@import "components/shared/cc-arrow-down/cc-arrow-down";
+
+@import "styles/overrides";
+
+

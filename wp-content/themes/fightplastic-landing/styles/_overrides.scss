@@ -1,0 +1,22 @@
+$is-desktop: 1000px;
+$is-mobile: 999.99px;
+
+.mobile-only {
+  display: none;
+
+  @media(max-width: $is-mobile) {
+    display: initial;
+  }
+}
+
+.desktop-only {
+  display: none;
+
+  @media(min-width: $is-desktop) {
+    display: initial;
+  }
+}
+
+.show {
+  display: block !important;
+}

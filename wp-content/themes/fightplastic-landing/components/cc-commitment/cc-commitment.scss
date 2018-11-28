@@ -1,0 +1,120 @@
+$is-desktop: 1000px;
+$font-family-helvetica-lt-std: "Helvetica LT Std", sans-serif;
+
+.cc-commitment {
+  padding: 0 0.9em;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1314px;
+
+  @media (min-width: $is-desktop) {
+    text-align: center;
+  }
+
+  &__title {
+    display: block;
+    margin: 1em 0 1.188em;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Verlag', sans-serif;
+    font-size: 1.625em;
+    font-weight: 700;
+
+    font-variant-numeric: lining-nums;
+    -moz-font-feature-settings: "lnum";
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+
+    text-transform: uppercase;
+
+    @media (min-width: $is-desktop) {
+      width: 50%;
+      margin: 65px auto 45px;
+      font-size: 40px;
+      font-family: 'Verlag', sans-serif;
+
+    }
+  }
+
+  &__sub-title {
+    margin-bottom: 0;
+    padding-top: 28px;
+    color: #ffffff;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+
+    @media (min-width: 1000px) {
+      padding-top: 71px;
+      font-size: 18px;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+
+    @media (min-width: $is-desktop) {
+      flex-direction: row;
+      justify-content: center;
+      font-size: 0.5em;
+    }
+  }
+
+  &__options-item {
+    text-align: center;
+    margin: 0 0 1em 0;
+    padding-top: 0.613em;
+
+    @media (min-width: $is-desktop) {
+      width: 17%;
+      padding: 0 10px;
+    }
+  }
+
+  &__options-icon {
+    margin-bottom: 0.625em;
+    width: 27%;
+
+    @media (min-width: $is-desktop) {
+      width: 45%;
+    }
+  }
+
+  &__options-text {
+    color: #ffffff;
+    font-family: $font-family-helvetica-lt-std;
+    font-size: 1.125em;
+    font-weight: 300;
+
+    @media (min-width: $is-desktop) {
+      padding: 15px 0;
+      font-size: 17px;
+    }
+  }
+
+  &__options-link {
+    position: relative;
+    font-family: $font-family-helvetica-lt-std;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #fff;
+
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      color: #ffffff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .cc-about__underline {
+    width: 100%;
+    @media (min-width: $is-desktop) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.arrow-down-btn {
+  display: block;
+  width: 36px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer; }
+  @media (max-width: 1000px) {
+    .arrow-down-btn {
+      display: none;
+      visibility: hidden;
+      height: 0;
+      width: 0; } }
+
+/*# sourceMappingURL=cc-arrow-down.css.map */

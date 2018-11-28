@@ -1,0 +1,34 @@
+.cc-product {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1314px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1rem;
+
+  &__image {
+    width: 90%;
+    height: auto;
+
+    &--mobile {
+      @media (min-width: $is-desktop) {
+        display: none;
+      }
+
+    }
+
+    &--desktop {
+      display: none;
+      @media (min-width: $is-desktop) {
+        display: block;
+      }
+
+
+    }
+  }
+
+}

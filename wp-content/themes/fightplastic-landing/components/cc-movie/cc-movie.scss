@@ -1,0 +1,125 @@
+$is-desktop: 1000px;
+
+.cc-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 3.750em 0 0 0;
+
+  @media (min-width: $is-desktop) {
+    margin: 55px 0 0 0;
+  }
+
+  &__title {
+    display: none;
+    color: #1b1b1b;
+    font-family: 'Verlag', sans-serif;
+    font-size: 1.625em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: 1000px) {
+      position: absolute;
+      z-index: 1000;
+      left: 50%;
+      top: calc(100vw / 6);
+      font-size: 40px;
+      transform: translateX(-50%);
+      color: #fff;
+    }
+
+    &--show {
+      display: initial;
+    }
+  }
+
+  &__video {
+    position: relative;
+  }
+
+  //&__video-placeholder {
+  //  position: absolute;
+  //  z-index: 100;
+  //  display: none;
+  //  cursor: pointer;
+  //  width: 100%;
+  //  min-height: calc(100vw / 1.81);
+  //
+  //  @media (min-width: 1000px) {
+  //    min-height: calc(100vw / 2.55);
+  //  }
+  //
+  //  &--show{
+  //    display: flex;
+  //  }
+  //}
+  //
+  //.no-webp &__video-placeholder {
+  //  background: url("images/intro-pl-img.jpg") center center no-repeat;
+  //  background-size: cover;
+  //
+  //  @media (min-width: 1000px) {
+  //    background: url("images/desktop-intro-bg.jpg") center center no-repeat;
+  //    background-size: 100% 100%;
+  //  }
+  //}
+  //
+  //.webp &__video-placeholder {
+  //  background: url("images/intro-pl-img.jpg.webp") center center no-repeat;
+  //  background-size: cover;
+  //
+  //  @media (min-width: 1000px) {
+  //    background: url("images/desktop-intro-bg.jpg.webp") center center no-repeat;
+  //    background-size: 100% 100%;
+  //  }
+  //}
+
+  &__video-player {
+    position: relative;
+    z-index: 90;
+    width: 100%;
+    margin-bottom: 13px;
+    height: calc(100vw / 1.81);
+    @media (min-width: 1000px) {
+      height: calc(100vw / 2.55);
+      margin-bottom: 8px;
+    }
+  }
+
+  //&__share-panel {
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: center;
+  //
+  //  &-item {
+  //    margin: 0 0.938em;
+  //    &--text {
+  //      color: #1b1b1b;
+  //      font-family: "Helvetica LT Std", sans-serif;
+  //      font-size: 1.000em;
+  //      font-weight: 300;
+  //      @media (min-width: 1000px) {
+  //        font-size: 18px;
+  //      }
+  //    }
+  //    &--visible {
+  //      @media (min-width: 1000px) {
+  //        display: none;
+  //      }
+  //    }
+  //    @media (min-width: 1000px) {
+  //      margin: 0 0.3em;
+  //    }
+  //  }
+  //
+  //  &-icon {
+  //    height: 1.625em;
+  //    width: auto;
+  //    @media(min-width: 1000px) {
+  //      height: auto;
+  //    }
+  //  }
+  //}
+}

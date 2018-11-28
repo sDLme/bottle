@@ -1,0 +1,111 @@
+$is-desktop: 1000px;
+
+.cc-tattoo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__slider {
+    width: 100%;
+    margin: 0 auto;
+
+    /* ------------------------------------------------------------------------------------------- */
+    /* HotFix                                                                                      */
+    /*   Because wordpress plugin will replace all image tags with the custom to use *.webp,       */
+    /*   the styles are set directly to <img> tag                                                  */
+    /* ------------------------------------------------------------------------------------------- */
+    @media (max-width: $is-desktop) {
+      .slick-slide img {
+        max-width: 8.813em;
+        max-height: 12.500em;
+        border-radius: 0.313em;
+        border: 0.063em solid rgba(112, 112, 112, 0);
+      }
+    }
+  }
+
+  &__slider-name {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.75em;
+    line-height: 1em;
+
+    @media (min-width: $is-desktop) {
+      font-size: 20px;
+    }
+  }
+
+  &__slider-age {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.75em;
+    line-height: 1em;
+
+    @media (min-width: $is-desktop) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    padding: 0.5em 0 1em 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+
+    @media (min-width: $is-desktop) {
+      padding: 33px 0;
+      font-size: 24px;
+    }
+  }
+
+  &__slider-info {
+    padding: 0 0 0.750em 0.938em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: "Helvetica LT Std", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+
+    @media (min-width: $is-desktop) {
+      padding: 0 0 21px 24px;
+      font-size: 18px;
+    }
+  }
+
+  &__slider-item {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    outline: none;
+
+    @media(min-width: $is-desktop) {
+      padding: 1px;
+      width: 434px;
+      height: 277px !important;
+    }
+  }
+
+  &__slider-video {
+    width: 434px;
+    height: 277px;
+
+    @media (max-width: $is-desktop) {
+      display: none;
+    }
+  }
+
+}
+
+.slick-slide {
+  height: inherit;
+}

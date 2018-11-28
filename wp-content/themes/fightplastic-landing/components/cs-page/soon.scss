@@ -1,0 +1,38 @@
+
+.main-page {
+  height: calc(100vh - 72px );
+  padding-top: 72px;
+  text-align: center;
+  background: url("images/desc-bg.jpg") no-repeat top center;
+  background-size: cover;
+  font-family: "Verlag", sans-serif;
+
+  .cs-title {
+    margin: 0;
+    font-size: 1em;
+    img {
+      width: 37%;
+      margin: 0.5em 0.5em;
+      @media (min-width: 1024px) {
+        width: 13%;
+        margin: 0;
+      }
+    }
+  }
+  .cs-sub-title {
+    margin-top: 0;
+    font-size: 1.78em;
+    font-family: "Verlag", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    line-height: 1.1em;
+    @media (min-width: 1000px) {
+      font-size: 62px;
+    }
+  }
+  @media (max-width: 768px) {
+    background: url("images/cs-bg.jpg") no-repeat top center;
+    background-size: cover;
+  }
+}
